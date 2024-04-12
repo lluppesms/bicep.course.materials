@@ -1,0 +1,21 @@
+# cd ..\Lab02
+
+#!/bin/sh
+## Create resource group
+# az group create --name rg_demo --location $location
+
+
+##Version release tag f
+
+## Publish Modules to ACR 
+## Create Azure Container Registry for publishing images into
+$acrname="XXXdemobicepregistry"
+az deployment group create --template-file containerregistry-parameters.bicep --parameters registryName=$acrname --name bicep.acr.remote.01 --resource-group rg_demo
+
+## Publish Storage Account Module
+$acrname="XXXdemobicepregistry"
+$moduleReleaseVersion="v1.0.0"
+az bicep publish --file storage-module.bicep --target br:$acrname.azurecr.io/bicep/modules/storage/storageaccounts:$moduleReleaseVersion
+
+## Cleanup Resourcegroup
+# az group delete --name rg_demo --yes --no-wait

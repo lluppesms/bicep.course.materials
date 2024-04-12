@@ -1,0 +1,17 @@
+# cd ../../../..
+# cd Labs\Course_Labs\Module_5_Using_Modules_in_a_Bicep_Template\Lab02
+
+#!/bin/sh
+## Create resource group
+# az group create --name rg_demo --location $location
+
+# Create an Azure Container Registry and publish a Bicep module to it in Lab01
+
+# Edit your BicepConfig.json file to point the value of "registry" on line 5 to your Azure Container Registry name you created in Lab01
+#     "registry": "XXXdemobicepregistry.azurecr.io",
+
+# Deploy storage resources using module from your remote bicep registry
+az deployment group create --template-file storageaccount-remote-module.bicep --name bicep.remote.03 --resource-group rg_demo
+
+## Cleanup Resource Group
+# az group delete --name rg_demo --yes --no-wait

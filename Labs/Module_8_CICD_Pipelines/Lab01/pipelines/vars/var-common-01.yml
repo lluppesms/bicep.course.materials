@@ -1,0 +1,18 @@
+# ----------------------------------------------------------------------------------------------------
+# Variables common to all environments
+# ----------------------------------------------------------------------------------------------------
+variables:
+  - name: azureServiceConnection
+    value: 'Demo Service Connection'
+  - name: resourceGroupName
+    value: 'rg_demo'
+  - name: location
+    value: 'eastus'
+  - name: bicepPath
+    value: '$(Build.SourcesDirectory)/Labs/Module_8_CICD_Pipelines/Lab01/bicep'
+  - name: bicepFileName
+    value: 'storageaccount.bicep'
+  - name: storageAccountName
+    value: 'llldemostorage'
+  - name: storageSku
+    value: 'Standard_LRS'

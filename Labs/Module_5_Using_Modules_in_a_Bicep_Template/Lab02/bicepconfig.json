@@ -1,0 +1,10 @@
+{
+    "moduleAliases": {
+        "br": {
+            "mybicepregistry":{
+                "registry": "XXXdemobicepregistry.azurecr.io",
+                "modulePath": "bicep/modules" 
+            }
+        }        
+    }
+}

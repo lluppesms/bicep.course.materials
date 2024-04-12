@@ -1,0 +1,12 @@
+# cd ../../../..
+# cd Labs\Course_Labs\Module_5_Using_Modules_in_a_Bicep_Template\Lab01
+
+#!/bin/sh
+## Create resource group
+# az group create --name rg_demo --location $location
+
+## Deploy resource group and provision resources - Local module
+az deployment group create --template-file storageaccount-local-module.bicep --name bicep.modules.01 --resource-group rg_demo
+
+## Cleanup Resource Group
+# az group delete --name rg_demo --yes --no-wait
