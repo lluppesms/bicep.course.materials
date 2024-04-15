@@ -22,11 +22,11 @@
 
 [Lab 6.2 - Test Migrated Azure Bicep Resources](./Module_6_Migrate_Azure_Resources_to_Bicep//Lab02/readme.md)
 
-[Lab 7.1 - Deploy Resources to Subscriptions](./Module_7_Deploy_Resources_Targets/Lab01/readme.md)
+[Lab 7.1 - Deploy Resources to Subscriptions](./Module_7_Deploy_Resource_Targets/Lab01/readme.md)
 
-[Lab 7.2 - Deploy Resources to Multiple Scopes](./Module_7_Deploy_Resources_Targets/Lab02/readme.md)
+[Lab 7.2 - Deploy Resources to Multiple Scopes](./Module_7_Deploy_Resource_Targets/Lab02/readme.md)
 
-[Lab 7.3 - Deploy Resources to A Management Group](./Module_7_Deploy_Resources_Targets/Lab03/readme.md)
+[Lab 7.3 - Deploy Resources to A Management Group](./Module_7_Deploy_Resource_Targets/Lab03/readme.md)
 
 [Lab 8.1 - CICD Pipelines](./Module_8_CICD_Pipelines/readme.md)
 
