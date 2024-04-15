@@ -1,0 +1,13 @@
+# cd ..\..\Labs\Module_8_Deploy_Resource_Targets
+
+## Get some help
+az deployment --help
+
+## Deploy a resource group to a ***subscription*** (note the deployment parameter changed)
+az deployment sub create --template-file main-rg.bicep --name resource-group.01 --location EastUS
+
+## Deploy a resource group to a ***subscription*** and a storage account to the resource group scope
+az deployment sub create --template-file resoumain-rg-storage.bicep --name resource-group.02 --location EastUS
+
+## Cleanup Resource Group
+# az group delete --name rg_demo --yes --no-wait
