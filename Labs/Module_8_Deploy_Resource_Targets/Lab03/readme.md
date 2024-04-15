@@ -1,4 +1,4 @@
-# Module 7: Deploy resources to subscriptions, management groups and Tenants - Lab03: Deploy resources to a Management group (Advanced)
+# Module 8: Deploy resources to subscriptions, management groups and Tenants - Lab03: Deploy resources to a Management group (Advanced)
 
 ## Steps
 

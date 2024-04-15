@@ -1,4 +1,4 @@
-# Module 8: Publish reusable code with Template Specs  - Lab02: Update and version a Template Spec
+# Module 7: Publish reusable code with Template Specs  - Lab02: Update and version a Template Spec
 
 ## Steps
 

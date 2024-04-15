@@ -1,4 +1,4 @@
-# Module 8: Publish reusable code with Template Specs  - Lab01: Create and deploy a template spec
+# Module 7: Publish reusable code with Template Specs  - Lab01: Create and deploy a template spec
 
 ## Steps
 

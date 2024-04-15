@@ -1,4 +1,4 @@
-# Module 9: Collaborating with Git in Visual Studio Code  - Lab guides
+# Module 10: Creating Pipelines to Automat Deployments
 
 ## Microsoft Learn Labs
 

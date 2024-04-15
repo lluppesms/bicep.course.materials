@@ -1,4 +1,4 @@
-# Module 7: Deploy resources to subscriptions, management groups and Tenants - Lab01: Deploy a subscription scoped resource
+# Module 8: Deploy resources to subscriptions, management groups and Tenants - Lab01: Deploy a subscription scoped resource
 
 ## Steps
 

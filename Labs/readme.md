@@ -22,15 +22,16 @@
 
 [Lab 6.2 - Test Migrated Azure Bicep Resources](./Module_6_Migrate_Azure_Resources_to_Bicep//Lab02/readme.md)
 
-[Lab 7.1 - Deploy Resources to Subscriptions](./Module_7_Deploy_Resource_Targets/Lab01/readme.md)
+[Lab 7.1 - Publish Reusable Code with Template Specs](./Module_7_Bicep_Template_Specs/Lab01/readme.md)
 
-[Lab 7.2 - Deploy Resources to Multiple Scopes](./Module_7_Deploy_Resource_Targets/Lab02/readme.md)
+[Lab 7.2 - Update a Template Specs](./Module_7_Bicep_Template_Specs/Lab02/readme.md)
 
-[Lab 7.3 - Deploy Resources to A Management Group](./Module_7_Deploy_Resource_Targets/Lab03/readme.md)
+[Lab 8.1 - Deploy Resources to Subscriptions](./Module_8_Deploy_Resource_Targets/Lab01/readme.md)
 
-[Lab 8.1 - CICD Pipelines](./Module_8_CICD_Pipelines/readme.md)
+[Lab 8.2 - Deploy Resources to Multiple Scopes](./Module_8_Deploy_Resource_Targets/Lab02/readme.md)
 
-<!-- 
-[Lab 9.1 - Publish Reusable Code with Template Specs](./Module_9_Bicep_Template_Specs/Lab01/readme.md)
-[Lab 9.2 - Update a Template Specs](./Module_9_Bicep_Template_Specs/Lab02/readme.md) 
--->
+[Lab 8.3 - Deploy Resources to A Management Group](./Module_8_Deploy_Resource_Targets/Lab03/readme.md)
+
+[Lab 9.1 - CICD Pipelines](./Module_9_Main_Bicep_Templates/readme.md)
+
+[Lab 10.1 - CICD Pipelines](./Module_10_CICD_Pipelines/readme.md)

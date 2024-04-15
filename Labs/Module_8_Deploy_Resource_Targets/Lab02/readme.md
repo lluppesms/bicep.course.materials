@@ -1,4 +1,4 @@
-# Module 7: Deploy resources to subscriptions, management groups and Tenants - Lab02: Deploy resources to a multiple scopes by using modules
+# Module 8: Deploy resources to subscriptions, management groups and Tenants - Lab02: Deploy resources to a multiple scopes by using modules
 
 ## Steps
 
