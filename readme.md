@@ -4,17 +4,17 @@ These are the materials and links for the Intro to Infrastructure as Code with B
 
 ## Agenda(s)
 
-[Itinerary - One Day](./Intro_To_Bicep_Datasheet_One_Day.pdf)
+[Itinerary - One Day Agenda](./Intro_To_Bicep_Datasheet_One_Day.pdf)
 
-[Itinerary - Two Day](./Intro_To_Bicep_Datasheet_Two_Day.pdf)
+[Itinerary - Two Day Agenda](./Intro_To_Bicep_Datasheet_Two_Day.pdf)
 
 ## Pre-Requisites
 
-[Install Tools](./Labs/Course_Labs/Module_1_Tooling_with_Visual_Studio_Code/Lab01/readme.md)
+[Install These Tools](./Labs/Course_Labs/Module_1_Tooling_with_Visual_Studio_Code/Lab01/readme.md)
 
 ## Labs
 
-[Labs](./Labs/readme.md)
+[Hands On Labs](./Labs/readme.md)
 
 ## Resources
 
