@@ -1,14 +1,14 @@
-# cd Labs\Course_Labs\Module_2_Introduction_to_Bicep_Templates\Lab01
+# cd Labs\Module_2_Introduction_to_Bicep_Templates\Lab01
 
 #!/bin/sh
+## In order to create things you may need to login to Azure first
+# az login
+
 ## Create resource group
 az group create --name rg_demo --location eastus
 
-## Deploy resource group and provision resources
-az deployment group create --resource-group rg_demo --template-file simple-storage-deploy.bicep --parameters simple-storage.parameters.json --name storage.simple.01 
-
-## What would this deploy do...?
-az deployment group create --what-if --resource-group rg_demo --template-file simple-storage-deploy.bicep --parameters simple-storage.parameters.json
+## Deploy the simplest bicep file
+az deployment group create --resource-group rg_demo --template-file simplest-storage.bicep
 
 ## Cleanup Resource Group
 # az group delete --name rg_demo --yes --no-wait

@@ -30,3 +30,5 @@ output storageInfo array = [for i in range(0, storageLoopCount): {
   blobEndpoint: storageAccountLoop[i].properties.primaryEndpoints.blob
   status: storageAccountLoop[i].properties.statusOfPrimary
 }]
+output accountsDeployed int = storageLoopCount
+output deployStorageAccount bool = deployStorageAccount
