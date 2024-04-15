@@ -2,6 +2,10 @@
 
 These are the materials and links for the Intro to Infrastructure as Code with Bicep course.
 
+[![Open in vscode.dev](https://img.shields.io/badge/Open%20in-vscode.dev-blue)][1]
+
+[1]: https://vscode.dev/github/lluppesms/bicep.course.materials/
+
 ## Agenda(s)
 
 [Itinerary - One Day Agenda](./Intro_To_Bicep_Datasheet_One_Day.pdf)
