@@ -1,5 +1,5 @@
-# cd ../../../..
-# cd Labs\Module_5_Using_Modules_in_a_Bicep_Template\Lab01
+# cd ../..
+# cd Labs\Module_5_Bicep_Modules\Lab01
 
 #!/bin/sh
 ## Create resource group

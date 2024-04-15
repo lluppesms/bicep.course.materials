@@ -1,5 +1,5 @@
-# cd ../../../..
-# cd Labs\Module_3_Build_reusable_Bicep_templates_by_using_parameters\Lab01
+# cd ../..
+# cd Labs\Module_3_Bicep_Parameters
 
 #!/bin/sh
 ## Create resource group

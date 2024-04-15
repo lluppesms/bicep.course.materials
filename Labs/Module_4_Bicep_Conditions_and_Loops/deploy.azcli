@@ -1,5 +1,5 @@
-# cd ../../../..
-# cd Labs\Module_4_Using_conditions_and_loops_in_a_Bicep_Template\Lab01
+# cd ../..
+# cd Labs\Module_4_Bicep_Conditions_and_Loops
 
 #!/bin/sh
 ## Create resource group
