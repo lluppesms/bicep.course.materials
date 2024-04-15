@@ -1,10 +1,12 @@
 # cd Labs\Module_2_Intro_to_Bicep
 
 #!/bin/sh
-## In order to create things you may need to login to Azure first
-# az login
+## In order to create things in Azure you will (probably) need to login to Azure first
+##   az login
+## If you have more than one subscription and need to set the default to a specific one
+##   az account set --subscription <<yourSubscriptionId>>
 
-## Create resource group
+## Create resource group (if needed)
 az group create --name rg_demo --location eastus
 
 ## Deploy the simplest bicep file
