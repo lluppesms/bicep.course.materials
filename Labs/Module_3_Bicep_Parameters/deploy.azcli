@@ -6,16 +6,16 @@
 # az group create --name rg_demo --location $location
 
 ## Deploy Bicep with JSON parameter file
-az deployment group create --parameters simple-storage.parameters.json --template-file simple-storage-deploy.bicep --name storage.params.01 --resource-group rg_demo
+az deployment group create --parameters simple-storage.parameters.json --template-file simple-storage.bicep --name storage.params.01 --resource-group rg_demo
 
 ## Deploy Bicep with Bicep parameter file
-az deployment group create --parameters simple-storage.bicepparam --template-file simple-storage-deploy.bicep --name storage.params.02 --resource-group rg_demo
+az deployment group create --parameters simple-storage.bicepparam --template-file simple-storage.bicep --name storage.params.02 --resource-group rg_demo
 
 ## Override One Parameter on the command line
-az deployment group create --parameters simple-storage.bicepparam storageAccountName=XXXuniquestoragedemo003 --name storage.params.03 --template-file simple-storage-deploy.bicep --resource-group rg_demo
+az deployment group create --parameters simple-storage.parameters.json storageAccountName=xxxuniquestoragedemo003 --name storage.params.03 --template-file simple-storage.bicep --resource-group rg_demo
 
 ## What would this deploy do if I ran it...? (add the --what-if parameter...)
-az deployment group create --what-if --template-file simple-storage.bicepparam --parameters simple-storage.parameters.json --resource-group rg_demo
+az deployment group create --what-if --template-file simple-storage.bicep --parameters simple-storage.parameters.json --resource-group rg_demo
 
 ## Cleanup Resource Group
 # az group delete --name rg_demo --yes --no-wait

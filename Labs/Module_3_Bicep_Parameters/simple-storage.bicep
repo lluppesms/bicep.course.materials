@@ -17,7 +17,7 @@ param location string = resourceGroup().location
 @description('The name of the Storage Account')
 param storageAccountName string = 'stg${uniqueString(resourceGroup().id)}'
 
-resource storageAccountName_resource 'Microsoft.Storage/storageAccounts@2021-06-01' = {
+resource storageAccountNameResource 'Microsoft.Storage/storageAccounts@2021-06-01' = {
   name: storageAccountName
   location: location
   sku: {
@@ -28,4 +28,4 @@ resource storageAccountName_resource 'Microsoft.Storage/storageAccounts@2021-06-
 }
 
 output storageAccountName string = storageAccountName
-output storageAccountId string = storageAccountName_resource.id
+output storageAccountId string = storageAccountNameResource.id
