@@ -1,3 +1,3 @@
 using './storageAccount-public-module.bicep'
 
-param storageAccountName = 'xxxStorageDemo05'
+param storageAccountName = 'xxxstoragepublic01'

@@ -1,4 +1,4 @@
-//REMOTE Module Reference
+//REMOTE PUBLIC Module Reference
 @description('Optional. The location to deploy into')
 param location string = resourceGroup().location
 

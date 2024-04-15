@@ -1,5 +1,5 @@
 # cd ../..
-# cd Labs\Module_5_Bicep_Modules\Lab01
+# cd ..\..\Labs\Module_5_Bicep_Modules\Lab01
 
 ## Deploy storage using Local module
 az deployment group create --template-file storageaccount-local-module.bicep --name bicep.modules.01 --resource-group rg_demo
@@ -8,7 +8,7 @@ az deployment group create --template-file storageaccount-local-module.bicep --n
 az deployment group create --template-file storageaccount-local-module.bicep --parameters storageaccount-local-module.bicepparam --name bicep.modules.02 --resource-group rg_demo
 
 ## Deploy storage using PUBLIC module and parameter file
-az deployment group create --template-file storageAccount-public-module.bicep --parameters storageAccount-public-module.bicepparam --name loop.storage.01 --resource-group rg_demo
+az deployment group create --template-file storageAccount-public-module.bicep --parameters storageAccount-public-module.bicepparam --name bicep.modules.03 --resource-group rg_demo
 
 ## Cleanup Resource Group
 # az group delete --name rg_demo --yes --no-wait
