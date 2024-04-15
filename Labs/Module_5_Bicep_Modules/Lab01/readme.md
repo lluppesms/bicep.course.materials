@@ -7,3 +7,6 @@
 3. Experiment with parameters
 4. Provision
 5. Review results
+6. Create a new Bicep template that calls a PUBLIC module
+7. Provision
+8. Review results

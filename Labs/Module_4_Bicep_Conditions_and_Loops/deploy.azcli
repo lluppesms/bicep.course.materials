@@ -5,7 +5,7 @@
 ## Create resource group
 # az group create --name rg_demo --location $location
 
-## Deploy resource group and provision resources
+## Deploy Bicep file with parameters
 az deployment group create --template-file loop-storage.bicep --parameters loop-storage.bicepparam --name loop.storage.01 --resource-group rg_demo
 
 ## Override the loop count parameter using the JSON parameter file
