@@ -27,7 +27,7 @@ In this lab, we will walk through these examples in ascending order, building on
 
 For more info on setting up pipelines and environments, see:
 
-- [Create Azure DevOps Service Connections](https://docs.luppes.com/CreateServiceConnections/)
-- [Create Azure DevOps Environments](https://docs.luppes.com/CreateDevOpsEnvironments/)
-- [Create Azure DevOps Variable Groups](https://docs.luppes.com/CreateDevOpsVariableGroups/)
-- [Create New Pipelines](https://docs.luppes.com/CreateNewPipeline/)
+- [Create Azure DevOps Service Connections](./CreateServiceConnections.md)
+- [Create Azure DevOps Environments](./CreateDevOpsEnvironments.md)
+- [Create Azure DevOps Variable Groups](./CreateDevOpsVariableGroups.md)
+- [Create New Pipelines](./CreateNewPipeline.md)
