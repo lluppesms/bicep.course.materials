@@ -1,0 +1,13 @@
+# cd ..\..\Labs\Module_7_Bicep_Template_Specs\Lab01
+
+## Create a template spec (works)
+az ts create  --name BasicStorageAccount -l EastUS -g rg_demo -v 1.0 --template-file storage-module.bicep --version-description "Basic Storage Account"
+
+## Show the details for this spec (works)
+az ts show --resource-group rg_demo --template-spec /subscriptions/a0f86c93-146a-4534-b83e-49090394aa78/resourceGroups/rg_demo/providers/Microsoft.Resources/templateSpecs/BasicStorageAccount
+
+## Deploy using a template spec (fails)
+az deployment group create --parameters storage-module.bicepparam --template-spec /subscriptions/a0f86c93-146a-4534-b83e-49090394aa78/resourceGroups/rg_demo/providers/Microsoft.Resources/templateSpecs/BasicStorageAccount --name temp.spec.01 --resource-group rg_demo
+
+## TODO
+##   Create a bicep file with syntax to publish using a template spec

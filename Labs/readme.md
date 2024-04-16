@@ -22,9 +22,7 @@
 
 [Lab 6.2 - Test Migrated Azure Bicep Resources](./Module_6_Migrate_Azure_Resources_to_Bicep//Lab02/readme.md)
 
-[Lab 7.1 - Publish Reusable Code with Template Specs](./Module_7_Bicep_Template_Specs/Lab01/readme.md)
-
-[Lab 7.2 - Update a Template Specs](./Module_7_Bicep_Template_Specs/Lab02/readme.md)
+[Lab 7.1 - Publish Reusable Code with Template Specs](./Module_7_Bicep_Template_Specs/readme.md)
 
 [Lab 8.1 - Deploy Resources to Multiple Scopes](./Module_8_Deploy_Resource_Targets/readme.md)
 
