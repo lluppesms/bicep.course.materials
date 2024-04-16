@@ -9,7 +9,7 @@ parameters:
   - name: storageAccountName
     displayName: Storage Account Name
     type: string
-    default: llldemostorage2
+    default: xxxdemostorage2
   - name: storageSku
     displayName: Storage SKU
     type: string
@@ -27,7 +27,7 @@ jobs:
         azureResourceManagerConnection: 'Demo Service Connection'
         resourceGroupName: 'rg_demo'
         location: 'eastus'
-        csmFile: '$(Build.SourcesDirectory)/Labs/Module_8_CICD_Pipelines/Lab01/bicep/storageaccount.bicep'
+        csmFile: '$(Build.SourcesDirectory)/Labs/Module_10_CICD_Pipelines/bicep/storageaccount.bicep'
         overrideParameters: >
           -storageAccountName ${{ parameters.storageAccountName }}
           -storageSku ${{ parameters.storageSku }}

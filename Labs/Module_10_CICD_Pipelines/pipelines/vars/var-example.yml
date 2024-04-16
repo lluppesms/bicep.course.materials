@@ -4,15 +4,21 @@
 variables:
   - name: azureServiceConnection
     value: 'Demo Service Connection'
-  - name: resourceGroupName
-    value: 'rg_demo'
   - name: location
     value: 'eastus'
-  - name: bicepPath
-    value: '$(Build.SourcesDirectory)/Labs/Module_10_CICD_Pipelines/bicep'
-  - name: bicepFileName
-    value: 'storageaccount.bicep'
-  - name: storageAccountName
-    value: 'xxxdemostorage'
-  - name: storageSku
+  - name: resourceGroupPrefix
+    value: 'rg_demo_dadabase'
+  - name: appName
+    value: 'xxx-DadABase' 
+
+  - name: webSiteSku 
+    value: 'B1'
+  - name: storageSku 
     value: 'Standard_LRS'
+
+  - name: bicepPath
+    value: 'Labs/Module_10_CICD_Pipelines/bicep'
+  - name: bicepFileName
+    value: 'main-web-app.bicep'
+  - name: bicepParameterFileName
+    value: 'main-web-app.bicepparam'

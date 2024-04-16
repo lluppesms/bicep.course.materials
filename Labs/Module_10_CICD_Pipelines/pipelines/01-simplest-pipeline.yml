@@ -13,7 +13,7 @@ jobs:
         azureResourceManagerConnection: 'Demo Service Connection'
         resourceGroupName: 'rg_demo'
         location: 'eastus'
-        csmFile: '$(Build.SourcesDirectory)/Labs/Module_8_CICD_Pipelines/Lab01/bicep/storageaccount.bicep'
+        csmFile: '$(Build.SourcesDirectory)/Labs/Module_10_CICD_Pipelines/bicep/storageaccount.bicep'
         overrideParameters: >
-          -storageAccountName llldemostorage
+          -storageAccountName xxxdemostorage
           -storageSku Standard_LRS

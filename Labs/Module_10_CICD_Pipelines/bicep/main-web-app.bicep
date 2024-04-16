@@ -51,8 +51,6 @@ module logAnalyticsWorkspaceModule 'loganalyticsworkspace.bicep' = {
     commonTags: commonTags
   }
 }
-
-// --------------------------------------------------------------------------------
 module storageModule 'storageaccount.bicep' = {
   name: 'storage${deploymentSuffix}'
   params: {
@@ -62,7 +60,6 @@ module storageModule 'storageaccount.bicep' = {
     commonTags: commonTags
   }
 }
-
 module webSiteModule 'website.bicep' = {
   name: 'webSite${deploymentSuffix}'
   params: {
@@ -75,7 +72,36 @@ module webSiteModule 'website.bicep' = {
     workspaceId: logAnalyticsWorkspaceModule.outputs.id
   }
 }
-
+module keyVaultModule 'keyvault.bicep' = {
+  name: 'keyvault${deploymentSuffix}'
+  dependsOn: [ webSiteModule ]
+  params: {
+    keyVaultName: resourceNames.outputs.keyVaultName
+    location: location
+    commonTags: commonTags
+    applicationUserObjectIds: [ webSiteModule.outputs.principalId ]
+    workspaceId: logAnalyticsWorkspaceModule.outputs.id
+  }
+}
+module keyVaultSecretList 'keyvaultlistsecretnames.bicep' = {
+  name: 'keyVault-Secret-List-Names${deploymentSuffix}'
+  dependsOn: [ keyVaultModule ]
+  params: {
+    keyVaultName: keyVaultModule.outputs.name
+    location: location
+    userManagedIdentityId: keyVaultModule.outputs.userManagedIdentityId
+  }
+}
+module keyVaultSecret4 'keyvaultsecretstorageconnection.bicep' = {
+  name: 'keyVaultSecret4${deploymentSuffix}'
+  dependsOn: [ keyVaultModule, storageModule ]
+  params: {
+    keyVaultName: keyVaultModule.outputs.name
+    secretName: 'StorageConnectionAppSetting'
+    storageAccountName: storageModule.outputs.name
+    existingSecretNames: keyVaultSecretList.outputs.secretNameList
+  }
+}
 // In a Linux app service, any nested JSON app key like AppSettings:MyKey needs to be 
 // configured in App Service as AppSettings__MyKey for the key name. 
 // In other words, any : should be replaced by __ (double underscore).
@@ -96,6 +122,7 @@ module webSiteAppSettingsModule 'websiteappsettings.bicep' = {
       AzureAD__TenantId: adTenantId
       AzureAD__ClientId: adClientId
       AzureAD__CallbackPath: adCallbackPath
+      StorageConnectionAppSetting: '@Microsoft.KeyVault(VaultName=${keyVaultModule.outputs.name};SecretName=StorageConnectionAppSetting)'
     }
   }
 }

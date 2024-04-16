@@ -3,5 +3,5 @@
 // ----------------------------------------------------------------------------------------------------
 using './storageaccount.bicep'
 
-param storageAccountName = 'llldemostorage'
+param storageAccountName = 'xxxdemostorage'
 param storageSku = 'Standard_LRS'

@@ -9,6 +9,6 @@ variables:
   - name: location
     value: 'eastus'
   - name: storageAccountName
-    value: 'llldemostorage'
+    value: 'xxxdemostorage'
   - name: storageSku
     value: 'Standard_LRS'

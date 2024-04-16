@@ -20,6 +20,6 @@ variables:
     value: 'Standard_LRS'
 
   - name: storageAccountName
-    value: 'llldemostorage'
+    value: 'xxxdemostorage'
   - name: storageSku
     value: 'Standard_LRS'

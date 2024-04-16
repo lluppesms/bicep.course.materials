@@ -85,3 +85,6 @@ resource containers 'Microsoft.Storage/storageAccounts/blobServices/containers@2
 // --------------------------------------------------------------------------------
 output id string = storageAccountResource.id
 output name string = storageAccountResource.name
+
+// Don't do this!
+// output accountKey string = storageAccountResource.listKeys().keys[0].value
